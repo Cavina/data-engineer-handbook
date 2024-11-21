@@ -1,4 +1,4 @@
-
+DROP TABLE IF EXISTS actors;
 DROP TYPE IF EXISTS film_stats;
 DROP TYPE IF EXISTS quality_class;
 
@@ -13,7 +13,7 @@ CREATE TYPE quality_class AS ENUM(
 	'star', 'good', 'average', 'bad'
 );
 
-DROP TABLE IF EXISTS actors;
+
 
 CREATE TABLE actors (
 	actor TEXT,
