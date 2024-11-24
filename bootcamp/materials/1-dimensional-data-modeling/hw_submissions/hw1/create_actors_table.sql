@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS actors_history_scd;
 DROP TYPE IF EXISTS film_stats;
 DROP TYPE IF EXISTS quality_class;
 
