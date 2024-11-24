@@ -2,7 +2,7 @@ INSERT INTO actors
 WITH last_year AS (
     SELECT *
     FROM actors
-    WHERE current_year = 1975
+    WHERE current_year = 1973
 ),
 current_year AS (
     SELECT 
@@ -19,7 +19,7 @@ current_year AS (
 		year,
 		AVG(rating) AS quality_class
     FROM actor_films
-    WHERE year = 1976
+    WHERE year = 1974
     GROUP BY actor, actorid, year
 )
 	SELECT
@@ -46,4 +46,6 @@ current_year AS (
 	FROM current_year cy FULL OUTER JOIN last_year ly
 	ON cy.actorid = ly.actorid;
 
-SELECT * FROM actors;
+-- SELECT * FROM actors;
+
+-- SELECT * FROM actor_films;
